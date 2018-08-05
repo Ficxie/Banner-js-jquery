@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'iconfont';
+    src: url('../image/font/iconfont.eot');
+    src: url('../image/font/iconfont.eot') format('embedded-opentype'),
+    url('../image/font/iconfont.woff') format('woff'),
+    url('../image/font/iconfont.ttf') format('truetype'),
+    url('../image/font/iconfont.svg#iconfont') format('svg');
+}
+body{
+    font-family: "微软雅黑";
+}
+a:visited,a:link{
+    color: #5e5e5e;
+    text-decoration: none;
+}
+#main{
+    width: 1200px;
+    height: 460px;
+    overflow: hidden;
+    margin: 30px auto;
+    position: relative;
+}
+
+#banner{
+    width: 1200px;
+    height: 500px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+#banner .img{
+    width: 1200px;
+    height: 460px;
+    float: left;
+    display: none;
+}
+
+#banner .active{
+    display: block;
+}
+
+#banner .img1{
+    background-image: url("../image/bg1.jpg");
+}
+
+#banner .img2{
+    background-image: url("../image/bg2.jpg");
+}
+
+#banner .img3{
+    background-image: url("../image/bg3.jpg");
+}
+
+/*跳转按钮样式*/
+
+#dots{
+    /*background: black;*/
+    width: 80px;
+    height: 20px;
+    position: absolute;
+    right: 5px;
+    bottom: 3px;
+    z-index: 999;
+}
+#dots span{
+    float: left;
+    margin-right: 10px;
+    background-color: rgba(7, 17, 27, 0.4);
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    cursor: pointer;
+    box-shadow: 0px 0px 1px 2px rgba(255, 255, 255, 0.8) inset;
+}
+
+#dots .active{
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 0px 1px 2px rgba(7, 17, 27, 0.6) inset;
+}
+
+#main .button{
+    position: absolute;
+    transform:rotate(180deg);
+    width: 50px;
+    height: 100px;
+    left: 244px;
+    top: 50%;
+    margin-top: -50px;
+    background: url(../image/arrow.png) center center no-repeat;
+}
+
+#main .next{
+    transform: rotate(0deg);
+    right: 4px;
+    left: auto;
+    top: 50%;
+    margin-top: -50px;
+}
+
+#main .button:hover{
+     background-color:#333;
+     opacity: 0.8;
+     filter: alpha(opacity=80);
+ }
+
+#nav{
+    height: 100%;
+    width: 744px;
+}
+#navLv1{
+    position: absolute;
+    width: 244px;
+    height: 460px;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.4);
+}
+
+#navLv2{
+    position: absolute;
+    width: 600px;
+    height:100% ;
+    background: url("../image/fe.png");
+    top: 0;
+    left: 244px;
+}
+
+#main .menu-content{
+
+}
+#main .menu-box{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 244px;
+    height: 100%;
+    background: #333;
+    opacity: 0.4;
+    z-index: 1;
+}
+#main .menu-content {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 244px;
+    height: 100%;
+    z-index: 2;
+}
+
+#main .menu-content .menuLv1{
+    height: 64px;
+    line-height: 66px;
+    font-size: 12px;
+    cursor: pointer;
+    padding: 0 24px;
+    position: relative;
+}
+
+#main .menu-content .menuLv1 a{
+    display: block;
+    color: #fff;
+    padding: 0 8px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    height: 63px;
+    font-size:16px;
+}
+
+#main .menu-content .menuLv1 i{
+    position: absolute;
+    font-family: "iconfont";
+    font-size: 24px;
+    font-style:normal;
+    font-weight: normal;
+    top: 3px;
+    right: 32px;
+}
+
+/*#main .menu-content .menuLv1:hover{*/
+    /*background: rgba(0,0,0,0.2);*/
+/*}*/
+
+/*二级菜单*/
+#main .menuLv2-box{
+    position: absolute;
+    top: 0;
+    left: 244px;
+    width: 730px;
+    height: 100%;
+    z-index: 581;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
+    border:1px solid #d9dde1;
+}
+
+.hide{
+    display: none;
+}
+
+#main .menuLv2-box .inner-box{
+    height: 100%;
+    width: 100%;
+    display: none;
+    background: url("../image/fe.png") no-repeat;
+    z-index: inherit;
+}
+#main .menuLv2-box .inner-box .sub-inner-box{
+    padding-left: 30px;
+    padding: 20px 0px 0px 30px;
+    line-height: 40px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+#main .menuLv2-box .inner-box .sub-inner-box .title{
+    color: red;
+}
+
+#main .menuLv2-box .inner-box .sub-inner-box .sub-row a{
+    font-size: 16px;
+    font-weight: lighter;
+    margin-right: 10px;
+    margin-left: 10px;
+}
