@@ -7,39 +7,36 @@
 </head>
 <body>
 <div id="head">
-    <a href="#">Sign In</a>
+    <a href="#" id="SignInLink">Sign In</a>
     <span>|</span>
-    <a href="#">Sign Up Now</a>
+    <a href="#" id="SignUpLink">Sign Up Now</a>
 </div>
 
 <div id="layout-mask"></div>
 <div id="layout-pop">
-    <div id="close" class="close"></div>
-    <div id="layoutConent" class="layoutConent">
-        <div id="SignIn">
-        <div class="login">
-            <div class="title">登陆</div>
-            <div class="item">
-                <label>账号:</label>
-                <input type="text" class="input" id="ID" name="username"/>
-                <p id="Error-id"></p>
-            </div>
-            <div class="item">
-                <label>密码:</label>
-                <input type="text" class="input" id="pwd" name="password"/>
-                <p id="Error-pwd"></p>
-            </div>
-            <div class="item">
-                <input type="submit" class="input" id="submit" name="submit" value="登陆"/>
-            </div>
-        </div>
-    </div>
-    </div>
+    <div id="close" class="close">×</div>
+    <div id="layoutConent" class="layoutConent"></div>
 </div>
 
 <!--登录窗口-->
-
-
+<div id="SignIn">
+    <div class="login">
+        <div class="title">登陆</div>
+        <div class="item">
+            <label>账号:</label>
+            <input type="text" class="input" id="ID" name="username"/>
+            <p id="Error-id"></p>
+        </div>
+        <div class="item">
+            <label>密码:</label>
+            <input type="password" class="input" id="pwd" name="password"/>
+            <p id="Error-pwd"></p>
+        </div>
+        <div class="itembutton">
+            <input type="submit" class="inputButton" id="submit" name="submit" value="登陆"/>
+        </div>
+    </div>
+</div>
 <!--注册窗口-->
 <div id="SignUp">
     <div class="register">
@@ -55,12 +52,12 @@
             <p id="Error-Rpwd"></p>
         </div>
         <div class="item">
-            <label>密码:</label>
+            <label>重复密码:</label>
             <input type="text" class="input" id="Cpwd" name="password"/>
             <p id="Checkpwd"></p>
         </div>
-        <div class="item">
-            <input type="submit" class="input" id="register" name="submit" value="注册"/>
+        <div class="itembutton">
+            <input type="submit" class="inputButton" id="register" name="submit" value="注册"/>
         </div>
     </div>
 </div>
