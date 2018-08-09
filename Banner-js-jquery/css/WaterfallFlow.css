@@ -135,3 +135,20 @@
 #layout-mask{
     display: none;
 }
+
+.WFWrap{
+    position: relative;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+}
+
+.WFWrap > div{
+    float: left;
+    width: 300px;
+    margin: 5px;
+}
+
+.WFWrap > div > img{
+    width: 100%;
+}
